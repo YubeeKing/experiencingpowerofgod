@@ -3,3 +3,4 @@ export {default as Footer} from "./Footer";
 export {default as HomeHero} from "./HomeHero";
 export {default as SubHero} from "./SubHero";
 export {default as SendPrayReq} from "./SendPrayReq";
+export {default as ResponsiveMenu} from "./ResponsiveMenu";

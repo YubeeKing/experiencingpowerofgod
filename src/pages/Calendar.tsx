@@ -1,3 +1,4 @@
+import { Navbar, SubHero } from "./components"
 
 
  [
@@ -114,11 +115,13 @@
 const Calendar = () => {
   return (
     <div>
+        <Navbar />
+        <SubHero />
         <div className="container">
             <h3>2025 Programme and Activies</h3>
             <div>
                 <ul>
-
+                    
                 </ul>
                 1. 21 Days Fasting & Prayer Programmes: Monday, 13th January - Sunday, 2nd February 2025
 2. Divine Repositioning: Thursday 30th January, 2025 - Sunday 2nd February, 2025

@@ -1,6 +1,6 @@
 import { RouterProvider, createBrowserRouter, Routes, Route } from 'react-router-dom'
 import './App.css'
-import { ContactPg, DadMumEPG, DeptGroup, HomePg, Ministries, MissionVision, OnlineGiving, ShareTestimony } from './pages'
+import { Calendar, ContactPg, DadMumEPG, DeptGroup, History, HomePg, Ministries, MissionVision, OnlineGiving, ShareTestimony } from './pages'
 import { Footer } from './pages/components'
 import AOS from "aos"
 import "slick-carousel/slick/slick.css";
@@ -64,6 +64,8 @@ function App() {
           <Route path='/daddy-and-mummy-epg' element={<DadMumEPG />} />
           <Route path='/share-testimony' element={<ShareTestimony />} />
           <Route path='/mission-vision' element={<MissionVision />} />
+          <Route path='/calendar' element={<Calendar />} />
+          <Route path='/history' element={<History />} />
           <Route path='/group' element={<DeptGroup />}/>
         </Routes>
         <Footer />
