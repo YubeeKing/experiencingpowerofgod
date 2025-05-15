@@ -8,3 +8,4 @@ export {default as ShareTestimony} from "./ShareTestimony"
 export {default as MissionVision} from "./MissionVision";
 export {default as Calendar} from "./Calendar";
 export {default as History} from "./History"
+export {default as AboutPg} from "./AboutPg";

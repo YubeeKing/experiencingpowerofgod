@@ -5,8 +5,19 @@ const ResponsiveMenu = ({setShowMenu, showMenu}: any) => {
     
     const navbarLinks = [
         {
-            name: "MISSION & VISION",
-            link: "/"
+            name: "ABOUT",
+            link: "/about"
+        },
+        {
+            name: "MINISTRIES",
+            link: "/ministries"
+        },
+        {
+            name: "CONTACT",
+            link: "/contact"
+        },
+        {
+            name: "CHURCH GROUPS"
         }
     ]
   return (
@@ -15,7 +26,7 @@ const ResponsiveMenu = ({setShowMenu, showMenu}: any) => {
         {/* Navlinks section */}
                 <div>
                     <ul className="space-y-4 text-xl" >
-                        {navbarLinks.map(({name, link}) => (
+                        {navbarLinks.map(({name, link}: any) => (
                             <li >
                                 <Link to={link}
                                 onClick={() => setShowMenu(false)}

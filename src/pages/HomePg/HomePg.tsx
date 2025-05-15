@@ -31,8 +31,8 @@ const HomePg = () => {
 
     const Timbox = ({timtype}: timtypes) => {
         return(
-            <div className="w-36 py-1.5 border border-primary text-center rounded">
-                <p className="font-[500]">{timtype}</p>
+            <div className="w-28 py-1.5 border border-primary text-center rounded">
+                <p className="font-[500] text-sm">{timtype}</p>
             </div>
         )
     }

@@ -17,13 +17,15 @@ const Navbar = () => {
     const dropdownLinks = [
         {
             name: "CHURCH GROUPS",
-            link: "/"
+            link: "/groups"
         },
         {
-            name: "MUMMY & DADDY EPG"
+            name: "MUMMY & DADDY EPG",
+            link: "/daddy-and-mummy-epg"
         },
         {
-            name: "SUBMIT YOUR TESTIMONY"
+            name: "SUBMIT YOUR TESTIMONY",
+            link: "share-testimony"
         }
     ]
   return (
@@ -31,12 +33,12 @@ const Navbar = () => {
     <div>
         <div className="container">
            <div className="flex flex-row justify-between flex-wrap items-center py-1">
-                <p className="text-trdcolor font-[600] text-[13px] font-[Jost]">Church Address: 5/7 Abuchi Obi Street Off Pedro Street Transformer Busstop, Bucknor Estate Ejigbo, Lagos State.</p>
-                <div className="flex gap-2 md:gap-4 items-center float-">
-                    <Link to="">
+                <p className="text-trdcolor font-[600] text-[13px] font-[Jost] text-center md:text-start">Church Address: 5/7 Abuchi Obi Street Off Pedro Street Transformer Busstop, Bucknor Estate Ejigbo, Lagos State.</p>
+                <div className="flex gap-2 md:gap-4 items-center mx-auto md:mx-0">
+                    <Link to="https://web.facebook.com/profile.php?id=61567068557049" target="_blank">
                     <FaFacebook size={23} color="#452a45"/>
                     </Link>
-                    <Link to="">
+                    <Link to="https://www.youtube.com/" target="_blank">
                     <FaYoutube size={23} color="#452a45"/>
                     </Link>
                     <Link to="">
@@ -67,12 +69,7 @@ const Navbar = () => {
                   </NavLink>
                 </li>
                 <li className="py-4">
-                  <NavLink to="/about" className="font-[500] font-[Jost]"  onClick={() => window.scrollTo(0, 0)}>
-                  ABOUT
-                  </NavLink>
-                </li>
-                <li className="py-4">
-                  <NavLink to="/ministry" className="font-[500] font-[Jost]"  onClick={() => window.scrollTo(0, 0)}>
+                  <NavLink to="/ministries" className="font-[500] font-[Jost]"  onClick={() => window.scrollTo(0, 0)}>
                   MINISTRIES
                   </NavLink>
                 </li>
@@ -89,12 +86,12 @@ const Navbar = () => {
                       <FaCaretDown className="transition-all duration-200 group-hover:rotate-180"/> 
                     </span>
                   </div>
-                  <div className="absolute -left-4 z-[9999] hidden group-hover:block shadow-md text-black w-[180px] bg-white">
+                  <div className="absolute left-0 top-14 z-[9999] hidden group-hover:block shadow-md text-black w-[180px] bg-white">
                     <ul>
                       {
                         dropdownLinks.map((data) =>(
                           <li key={data.name}>
-                            <a href={data.link} className="inline-block w-full font-[500] p-2 hover:bg-primary/20">{data.name}</a>
+                            <a href={data.link} className="inline-block w-full font-[500] text-sm p-2 hover:bg-primary/20">{data.name}</a>
                           </li>
                         )) 
                       }
@@ -106,9 +103,12 @@ const Navbar = () => {
             <div>
               {/* Book Now Button */}
               <div className="flex items-center gap-4">
+                <Link to="/online-giving">
                 <button
                 className="bg-gradient-to-r from-[#fe4cde] to-[#fedc4d] hover:bg-amber-50 transition-all duration-500 text-white px-3 py-1 rounded-full"
                 >GIVE</button>
+                </Link>
+                
                {/* Mobile Hamburger meun */}
               <div className="md:hidden block">
                 {showMenu ? (
