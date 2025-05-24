@@ -5,6 +5,10 @@ const ResponsiveMenu = ({setShowMenu, showMenu}: any) => {
     
     const navbarLinks = [
         {
+            name: "HOME",
+            link: "/"
+        },
+        {
             name: "ABOUT",
             link: "/about"
         },
@@ -17,7 +21,16 @@ const ResponsiveMenu = ({setShowMenu, showMenu}: any) => {
             link: "/contact"
         },
         {
-            name: "CHURCH GROUPS"
+            name: "CHURCH GROUPS",
+            link: "/groups"
+        },
+        {
+            name: "DADDY & MUMMY EPG",
+            link: "/daddy-and-mummy-epg"
+        },
+        {
+            name: "SUBMIT YOUR TESTIMONY",
+            link: "/share-testimony"
         }
     ]
   return (
@@ -30,7 +43,7 @@ const ResponsiveMenu = ({setShowMenu, showMenu}: any) => {
                             <li >
                                 <Link to={link}
                                 onClick={() => setShowMenu(false)}
-                                className="mb-5 inline-block"
+                                className="mb-5 inline-block text-sm"
                                 >{name}</Link>
                             </li>
                         ))}

@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import Navbar from "./Navbar";
 import Slider from "react-slick";
 import { Button } from "../ui";
+import { herotwo } from "../../assets";
 
 const HomeHero = () => {
     const settings = {
@@ -18,8 +19,9 @@ const HomeHero = () => {
     <div className="h-screen">
 
         <Navbar />
+        {/* <div className="pt-12"> */}
         <Slider {...settings}>
-            <div className="h-[75vh] bg-heroimgone bg-center bg-opacity-50 bg-cover flex justify-center items-center align-middle w-full ">
+            <div className="h-[100vh] bg-heroimgone bg-center bg-opacity-50 bg-cover flex justify-center items-center align-middle w-full ">
                 <div className="flex justify-center items-center backdrop-brightness-50 border-l-indigo-900 w-full h-full text-white">
                 <div className="md:w-3/4 w-full flex flex-col gap-4 justify-center items-center">
                   <h3 className="text-xl md:text-5xl text-center">WELCOME TO THE EXPERIENCING POWER OF GOD PROPHETIC MINISTRY</h3>
@@ -33,8 +35,11 @@ const HomeHero = () => {
               </div>
                
             </div>
-            <div className="h-[75vh] bg-suhero bg-center bg-cover bg-opacity-80">
-              <div className="flex justify-center items-center backdrop-brightness-50 border-l-indigo-900 w-full h-full text-white">
+            <div 
+            className="h-[100vh]"
+            // className="h-[100vh] bg-herotwo bg-center bg-cover bg-opacity-80"
+            >
+              {/* <div className="flex justify-center items-center backdrop-brightness-50 border-l-indigo-900 w-full h-full text-white">
                 <div className="md:w-3/4 w-full flex flex-col gap-4 justify-center items-center">
                 <h3 className="text-xl md:text-5xl text-center">WELCOME TO THE EXPERIENCING POWER OF GOD PROPHETIC MINISTRY</h3>
                     <p className="text-center md:text-lg" >Our user-friendly interface and powerful tools make trading and investing accessible to everyone. Whether you're a seasoned pro or just starting, we've got you covered.</p>
@@ -42,11 +47,11 @@ const HomeHero = () => {
                      <Button btntext="Get Started"/> 
                     </Link>
                 </div>
-              </div>
-                
+              </div> */}
+                <img src={herotwo} alt="" className="h-full w-full" />
                 
             </div>
-            <div className="h-[75vh] bg-heroimgthree bg-center bg-cover">
+            <div className="h-[100vh] bg-heroimgthree bg-center bg-cover">
                 <div className="flex justify-center items-center backdrop-brightness-50 border-l-indigo-900 w-full h-full text-white">
                 <div className="md:w-3/4 w-full flex flex-col gap-4 justify-center items-center">
                 <h3 className="text-xl md:text-5xl text-center">WELCOME TO THE EXPERIENCING POWER OF GOD PROPHETIC MINISTRY</h3>
@@ -58,7 +63,9 @@ const HomeHero = () => {
               </div>
                 
             </div>
-        </Slider>
+        </Slider>  
+        {/* </div> */}
+        
     </div>
   )
 }

@@ -30,7 +30,8 @@ const Navbar = () => {
     ]
   return (
     <>
-    <div>
+    <div className="w-full bg-white fixed z-50">
+      <div>
         <div className="container">
            <div className="flex flex-row justify-between flex-wrap items-center py-1">
                 <p className="text-trdcolor font-[600] text-[13px] font-[Jost] text-center md:text-start">Church Address: 5/7 Abuchi Obi Street Off Pedro Street Transformer Busstop, Bucknor Estate Ejigbo, Lagos State.</p>
@@ -127,7 +128,9 @@ const Navbar = () => {
           </div>
         </div>
         <ResponsiveMenu setShowMenu={setShowMenu} showMenu={showMenu} />
+    </div> 
     </div>
+   
     </>
     
   )

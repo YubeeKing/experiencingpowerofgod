@@ -1,6 +1,7 @@
 import { heroImg } from "../../assets"
 import { HomeHero, SendPrayReq } from "../components"
 import { TestyCard } from "../components/TestyCarousel"
+import Slider from "react-slick";
 
 interface timtypes {
     timtype: string
@@ -28,6 +29,14 @@ const HomePg = () => {
     // const monthlyActivities = [
 
     // ]
+    var settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    autoplay: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
 
     const Timbox = ({timtype}: timtypes) => {
         return(
@@ -47,7 +56,7 @@ const HomePg = () => {
 
                     <div className="grid grid-cols-1 md:grid-cols-2 justify-center items-center gap-4 md:gap-8">
                         <div>
-                         <h3 className="text-xl font-[600] text-trdcolor font-[Jost]">Weekly Program</h3>
+                         <h3 className="text-2xl font-[600] text-trdcolor font-[Jost] py-4">Weekly Program</h3>
                         <div className="flex flex-col gap-2 py-2">
                         {
                             weeklyActivities.map((item) => (
@@ -61,7 +70,27 @@ const HomePg = () => {
                         </div>   
                         </div>
                         <div>
-                            <img src={heroImg} alt="" className="w-full rounded-lg"/>
+                            <Slider {...settings}>
+      <div className="">
+        <img src={heroImg} alt="" className="w-full rounded-lg"/>
+      </div>
+      <div>
+        <img src={heroImg} alt="" className="w-full rounded-lg"/>
+      </div>
+      <div>
+        <img src={heroImg} alt="" className="w-full rounded-lg"/>
+      </div>
+      <div>
+        <img src={heroImg} alt="" className="w-full rounded-lg"/>
+      </div>
+      <div>
+        <img src={heroImg} alt="" className="w-full rounded-lg"/>
+      </div>
+      <div>
+        <img src={heroImg} alt="" className="w-full rounded-lg"/>
+      </div>
+    </Slider>
+                            {/* <img src={heroImg} alt="" className="w-full rounded-lg"/> */}
                         </div>
                         
     

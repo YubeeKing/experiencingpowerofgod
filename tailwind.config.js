@@ -17,7 +17,8 @@ export default {
         'heroimgone': "url('https://res.cloudinary.com/dr6a80sph/image/upload/v1746948512/church_-_Made_with_PosterMyWall_3_wdfxam.jpg')",
         'heroimgtwo': "url('https://res.cloudinary.com/dr6a80sph/image/upload/v1705992451/hhero_c1gym9.jpg')",
         'heroimgthree': "url('https://res.cloudinary.com/dr6a80sph/image/upload/v1705992451/heroo_do7twv.jpg')",
-        'suhero': "url('https://res.cloudinary.com/dr6a80sph/image/upload/v1746949070/New_Year_Church_Theme_-_Made_with_PosterMyWall_venfva.jpg')"
+        'suhero': "url('https://res.cloudinary.com/dr6a80sph/image/upload/v1746949070/New_Year_Church_Theme_-_Made_with_PosterMyWall_venfva.jpg')",
+        herotwo: "url('assets/herotwoes.jpg')"
       },
       container: {
         center: true,

@@ -1,4 +1,3 @@
-// import { Link } from "react-router-dom"
 import { homelogo } from "../../assets"
 import { FaUserAlt } from "react-icons/fa"
 import { FaEnvelope, FaPhone} from "react-icons/fa6"
