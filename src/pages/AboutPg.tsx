@@ -1,5 +1,5 @@
 import { heroImg } from "../assets"
-import { Navbar, SubHero } from "./components"
+import { Navbar, SendPrayReq, SubHero } from "./components"
 
 
 const AboutPg = () => {
@@ -61,6 +61,7 @@ const AboutPg = () => {
             </div>
             </div>
         </div>
+        <SendPrayReq />
     </div>
   )
 }

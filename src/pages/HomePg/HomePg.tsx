@@ -1,6 +1,6 @@
 import { heroImg } from "../../assets";
 import { HomeHero, SendPrayReq } from "../components";
-import { TestyCard } from "../components/TestyCarousel";
+// import { TestyCard } from "../components/TestyCarousel";
 import Slider from "react-slick";
 
 interface timtypes {
@@ -49,7 +49,7 @@ const HomePg = () => {
       <div>
         <HomeHero />
         <div>
-          <p className="text-center py-4 bg-neutral-900 text-neutral-100 font-[600] font-[Jost] text-3xl uppercase">2025: My year of divine speed (isaiah 58:8)</p>
+          <p className="text-center py-2 md:py-4 bg-neutral-900 text-neutral-100 font-[600] font-[Jost] text-lg md:text-3xl uppercase">2025: My year of divine speed (isaiah 58:8)</p>
         </div>
         <div className="container">
           {/* OUR SERVICES */}
@@ -173,11 +173,11 @@ const HomePg = () => {
               esse odio totam.
             </p>
           </div> */}
-          <TestyCard />
+          {/* <TestyCard /> */}
           <SendPrayReq />
         </div>
       </div>
-      <div style={{ width: "100%" }}>
+      {/* <div style={{ width: "100%" }}>
         <iframe
           width="100%"
           height="600"
@@ -187,7 +187,7 @@ const HomePg = () => {
             Personal GPS
           </a>
         </iframe>
-      </div>
+      </div> */}
     </div>
   );
 };

@@ -1,4 +1,4 @@
-import { Navbar, SubHero } from "./components"
+import { Navbar, SendPrayReq, SubHero } from "./components"
 
 
 const OnlineGiving = () => {
@@ -6,6 +6,7 @@ const OnlineGiving = () => {
     <div>
       <Navbar />
       <SubHero />
+      <SendPrayReq />
     </div>
   )
 }

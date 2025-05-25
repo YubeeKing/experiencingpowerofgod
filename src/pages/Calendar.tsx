@@ -1,4 +1,4 @@
-import { Navbar, SubHero } from "./components"
+import { Navbar, SendPrayReq, SubHero } from "./components"
 
 
  [
@@ -152,6 +152,7 @@ const Calendar = () => {
 27. Crossover Night: Wednesday 31st December, 2025.
             </div>
         </div>
+        <SendPrayReq />
     </div>
   )
 }

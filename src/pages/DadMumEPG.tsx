@@ -1,5 +1,5 @@
 import { daddyepg, mummyepg } from "../assets"
-import { Navbar, SubHero } from "./components"
+import { Navbar, SendPrayReq, SubHero } from "./components"
 
 
 const DadMumEPG = () => {
@@ -36,6 +36,7 @@ const DadMumEPG = () => {
         </div> 
         </div>
       </div>
+      <SendPrayReq />
     </div>
   )
 }

@@ -3,6 +3,8 @@ import './App.css'
 import { AboutPg, Calendar, ContactPg, DadMumEPG, DeptGroup, History, HomePg, Ministries, MissionVision, OnlineGiving, ShareTestimony } from './pages'
 import { Footer } from './pages/components'
 import AOS from "aos"
+import "react-toastify/dist/ReactToastify.css";
+import { ToastContainer } from 'react-toastify'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useEffect, useState } from 'react';
@@ -69,7 +71,19 @@ function App() {
           <Route path='/history' element={<History />} />
           <Route path='/groups' element={<DeptGroup />}/>
         </Routes>
+        <div style={{ width: "100%" }}>
+        <iframe
+          width="100%"
+          height="600"
+          src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=5/7%20Abuchi%20Obi%20Street%20Off%20Pedro%20Street%20Transformer%20Busstop,%20Bucknor%20Estate%20Ejigbo,%20Lagos%20State.+(EXPERIENCING%20POWER%20OF%20GOD%20(E.P.G)%20PROPHETIC%20MINISTRY)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+        >
+          <a href="https://www.gps.ie/collections/personal-trackers/">
+            Personal GPS
+          </a>
+        </iframe>
+      </div>
         <Footer />
+        <ToastContainer />
       </div>
     )
   }

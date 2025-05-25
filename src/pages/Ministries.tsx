@@ -1,5 +1,5 @@
 import { heroImg } from "../assets";
-import { Navbar, SubHero } from "./components";
+import { Navbar, SendPrayReq, SubHero } from "./components";
 import { Button } from "./ui";
 
 const Ministries = () => {
@@ -143,6 +143,7 @@ const Ministries = () => {
          
         </div>
       </div>
+      <SendPrayReq />
     </div>
   );
 };

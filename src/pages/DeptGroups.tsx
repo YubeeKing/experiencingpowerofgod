@@ -1,4 +1,4 @@
-import { Navbar, SubHero } from "./components"
+import { Navbar, SendPrayReq, SubHero } from "./components"
 
 
 const DeptGroups = () => {
@@ -62,6 +62,7 @@ const DeptGroups = () => {
             
             
         </div>
+        <SendPrayReq />
     </div>
   )
 }
