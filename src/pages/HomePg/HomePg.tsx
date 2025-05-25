@@ -7,6 +7,8 @@ interface timtypes {
   timtype: string;
 }
 
+console.log(window.innerWidth, "widthe")
+
 const HomePg = () => {
   const weeklyActivities = [
     {

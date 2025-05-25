@@ -6,3 +6,6 @@ export {default as herotwo} from "./herotwoes.jpg";
 export {default as homewelcome} from "./homewelcome.jpg";
 export {default as homethurs} from "./homethurs.jpg";
 export {default as homepayment} from "./homepayment.jpg";
+export {default as homewelmobile} from "./homewelmobile.jpg";
+export {default as homepaymobile} from "./homepaymobile.jpg";
+export {default as homethursmob} from "./homethursmob.jpg";

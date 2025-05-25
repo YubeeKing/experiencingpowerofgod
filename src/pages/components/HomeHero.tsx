@@ -1,6 +1,6 @@
 import Navbar from "./Navbar";
 import Slider from "react-slick";
-import { homepayment, homethurs, homewelcome } from "../../assets";
+import { homepayment, homepaymobile, homethurs, homethursmob, homewelcome, homewelmobile } from "../../assets";
 
 const HomeHero = () => {
     const settings = {
@@ -20,18 +20,18 @@ const HomeHero = () => {
         {/* <div className="pt-12"> */}
         <Slider {...settings}>
             <div className="h-[90vh]">
-               <img src={homewelcome} alt="" className="h-full w-full object-cover" />
+               <img src={window.innerWidth > 767 ? homewelcome : homewelmobile} alt="" className="h-full w-full object-cover" />
                
             </div>
             <div 
             className="h-[90vh]"
             // className="h-[100vh] bg-herotwo bg-center bg-cover bg-opacity-80"
             >
-                <img src={homethurs} alt="" className="h-full w-full" />
+                <img src={window.innerWidth > 767 ? homethurs: homethursmob} alt="" className="h-full w-full" />
                 
             </div>
             <div className="h-[90vh]">
-                <img src={homepayment} alt="" className="h-full w-full object-cover"/>
+                <img src={window.innerWidth > 767 ? homepayment: homepaymobile} alt="" className="h-full w-full object-cover"/>
                 
             </div>
         </Slider>  
