@@ -5,9 +5,32 @@
     <link rel="icon" type="image/svg+xml" href="/src/assets/homelogo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EXPERIENCING POWER OF GOD (EPG) PROPHETIC MINISTRY</title>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" async></script>
+
+
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+          {
+            pageLanguage: "en",
+            layout: window.google.translate.TranslateElement.InlineLayout.VERTICAL,
+          },
+          'google_translate_element'
+        );
+      }
+    </script>
   </head>
   <body>
+    <div id="google_translate_element" class="h-0 flex flex-row z-50 fixed top-1/4 right-10"></div>
     <div id="root"></div>
+    <form name="prayreq" netlify netlify-honeypot="bot-field" hidden>
+      <input type="text" name="fullname" />
+      <input type="email" name="email" />
+      <input type="text" name="number">
+      <input type="text" name="message">
+      <!-- Here I put the forms this helps netlfy identify the forms but the rest of the work is done later in the various components -->
+    </form>
+    <script src="//code.jivosite.com/widget/AZHCdR3jFl" async></script>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
