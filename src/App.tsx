@@ -46,7 +46,7 @@ function App() {
     return (
       <div>
         <button
-      className={`${visible ? 'block' : 'hidden'} fixed bottom-12 z-50 right-4 md:right-10 text-primary font-[700] bg-white rounded-full border-2 p-1.5 border-primary hover:bg-primary hover:text-white transition-all ease-in-out duration-[1s]`}
+      className={`${visible ? 'block' : 'hidden'} fixed bottom-12 z-50 left-4 md:right-10 text-primary font-[700] bg-white rounded-full border-2 p-1.5 border-primary hover:bg-primary hover:text-white transition-all ease-in-out duration-[1s]`}
       // aria-label="Scroll to the top"
       onClick={scrollToTop}
       // style={{ display: visible ? "inline" : "none" }}
